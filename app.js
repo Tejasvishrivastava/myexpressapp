@@ -9,6 +9,9 @@ app.use(express.static("public"))
 app.get("/",(req,res)=>{
     res.send("Hello World")
 })
+app.get("/health",(req,res)=>{
+    res.send("Status OK ... ")
+})
 
 app.listen(port, function(req,res){
     console.log("server started")
